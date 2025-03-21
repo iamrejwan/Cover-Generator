@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        .header img {
+            width: 150px;
+        }
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .table-container {
+            width: 100%;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        .comments {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: left;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 18px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Daffodil_International_University_Logo.svg/1200px-Daffodil_International_University_Logo.svg.png" alt="University Logo">
+        <div class="title">Theory Assignment Report</div>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <tr>
+                <th rowspan="2">Allocate mark & Percentage</th>
+                <th colspan="4">Only for course Teacher</th>
+                <th rowspan="2">Total Mark</th>
+            </tr>
+            <tr>
+                <th>Needs Improvement (25%)</th>
+                <th>Developing (50%)</th>
+                <th>Sufficient (75%)</th>
+                <th>Above Average (100%)</th>
+            </tr>
+            <tr>
+                <td>Clarity</td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Content Quality</td>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Spelling & Grammar</td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Organization and Formatting</td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="5"><b>Total Obtained Mark</b></td>
+                <td>{{totalObtainedMark}}</td>
+            </tr>
+            <tr>
+                <td colspan="6" class="comments"><b>Comments:</b> {{comments}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p><span class="bold">Semester:</span> {{semester}}</p>
+        <p><span class="bold">Student Name:</span> {{studentName}}</p>
+        <p><span class="bold">Student ID:</span> {{studentID}}</p>
+        <p><span class="bold">Batch:</span> {{batch}} &nbsp;&nbsp;&nbsp; <span class="bold">Section:</span> {{section}}</p>
+        <p><span class="bold">Course Code:</span> {{courseCode}} &nbsp;&nbsp;&nbsp; <span class="bold">Course Name:</span> {{courseName}}</p>
+        <p><span class="bold">Course Teacher Name:</span> {{teacherName}}</p>
+        <p><span class="bold">Designation:</span> {{designation}}</p>
+        <p><span class="bold">Submission Date:</span> {{submissionDate}}</p>
+    </div>
+</body>
+</html>

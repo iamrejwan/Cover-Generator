@@ -1,0 +1,4 @@
+Flask
+gunicorn
+html2canvas
+requests
